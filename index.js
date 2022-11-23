@@ -1,11 +1,42 @@
-function scuberGreetingForFeet(){
+let rideHeight;
+let city;
+let tip;
+let cityName;
+function scuberGreetingForFeet(rideHeight){
   // Write your code here!
+  if (rideHeight <= 400){
+    return 'This one is on me!';
+  }
+  else if (rideHeight >= 2500){
+    return 'No can do.';
+  }
+  else if (rideHeight >= 2000){
+    return 'I will gladly take your thirty bucks.';
+  }
 }
 
-function ternaryCheckCity(){
+function ternaryCheckCity(city){
   // Write your code here!
+  
+  cityName = city == 'NYC'? "Ok, sounds good." : "No go.";
+  return cityName
 }
 
-function switchOnCharmFromTip(){
+function switchOnCharmFromTip(tip){
   // Write your code here!
+ switch (tip) {
+  case 'generous':
+    return "Thank you so much."
+
+    break;
+
+  case 'not as generous':
+    return "Thank you."
+
+    break;
+ 
+  default:
+    return "Bye."
+    break;
+ }
 }
